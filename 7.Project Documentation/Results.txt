@@ -1,0 +1,12 @@
+RESULTS
+
+The LegalEase application provides a functional web interface for AI-assisted legal document generation.
+
+1. The interface collects document type, parties, terms and effective date.
+2. Requests are validated by Pydantic and processed by the FastAPI /generate endpoint.
+3. Gemini generates a structured legal document (sample: Rental Agreement between Ramesh (Landlord) and Suresh (Tenant), effective 25-09-2026).
+4. The document is displayed in a styled preview with clause-wise structure.
+5. Users can edit the generated text before exporting.
+6. The document can be downloaded as TXT, DOCX (Times New Roman, centered title, footer) and PDF (headings, bulleted terms, footer).
+7. Errors are returned as HTTP 500 with a readable message.
+8. Generated documents are AI drafts and should be reviewed by a qualified legal professional before real use.

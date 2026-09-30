@@ -1,0 +1,3 @@
+AIM
+
+To develop LegalEase, an AI-powered legal document generator that allows users to enter the document type, parties involved, terms and conditions and effective date, generates a structured legal document using Generative AI, and lets the user preview, edit and download it as TXT, DOCX or PDF.

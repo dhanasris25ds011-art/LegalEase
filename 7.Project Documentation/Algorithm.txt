@@ -1,0 +1,16 @@
+ALGORITHM
+
+1. Start the FastAPI backend and the Streamlit frontend.
+2. Display the LegalEase interface.
+3. Collect Document Type, Parties Involved, Terms & Conditions and Effective Date.
+4. Send the values to the backend using HTTP POST /generate.
+5. Validate the request using the DocumentRequest Pydantic model.
+6. Pass the validated details to GeminiDocumentGenerator.
+7. Build a structured prompt requesting a formal legal document with multiple sections and clauses.
+8. Call the Gemini model and receive the generated text.
+9. Return the text to the frontend as JSON (document field); return HTTP 500 if an error occurs.
+10. Sanitize the text (replace typographic characters, remove unsupported characters).
+11. Display the document in a styled HTML preview.
+12. Allow the user to edit the document in an inline text area.
+13. Generate the TXT, DOCX (format_docx) or PDF (format_pdf) file on request.
+14. Download the file and end when the user closes the application.
